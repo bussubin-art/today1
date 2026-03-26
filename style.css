@@ -1,1 +1,104 @@
-/* Add styles here */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+
+}
+
+#app {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+weather-card {
+    display: block;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.weather-card-container {
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.temperature {
+    font-size: 4em;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #333;
+}
+
+.weather-description {
+    font-size: 1.2em;
+    color: #555;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.recommendation {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.recommendation h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.recommendation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recommendation-list li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .temperature {
+        font-size: 3em;
+    }
+
+    .weather-card-container {
+        padding: 20px;
+    }
+}
